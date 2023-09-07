@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var botonDescargarPDF = document.getElementById('descargarPDF');
+// document.addEventListener('DOMContentLoaded', function() {
+//   var botonDescargarPDF = document.getElementById('descargarPDF');
 
-  botonDescargarPDF.addEventListener('click', function() {
-      var urlPDF = 'assets/archivos/2023.08.16 catálogo v3.pdf';
-      var link = document.createElement('a');
-      link.href = urlPDF;
-      link.download = '2023.08.16 catálogo v3.pdf';
-      link.click();
-  });
-});
+//   botonDescargarPDF.addEventListener('click', function() {
+//       var urlPDF = 'assets/archivos/2023.08.16 catálogo v3.pdf';
+//       var link = document.createElement('a');
+//       link.href = urlPDF;
+//       link.download = '2023.08.16 catálogo v3.pdf';
+//       link.click();
+//   });
+// });
 
 /**
  * navbar toggle
