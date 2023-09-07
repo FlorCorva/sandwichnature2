@@ -1,6 +1,41 @@
 'use strict';
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtén todos los botones con el atributo data-pdf
+  var botonesDescargarPDF = document.querySelectorAll('[data-pdf]');
+
+  // Agrega un evento de clic a cada botón
+  botonesDescargarPDF.forEach(function(boton) {
+      boton.addEventListener('click', function() {
+          // Obtiene la URL del PDF desde el atributo data-pdf
+          var urlPDF = boton.getAttribute('data-pdf');
+
+          // Crea un elemento <a> oculto para descargar el PDF
+          var link = document.createElement('a');
+          link.href = urlPDF;
+
+          // Establece el atributo "download" para forzar la descarga
+          link.download = 'wraps.pdf'; // Puedes personalizar el nombre
+
+          // Simula un clic en el enlace para iniciar la descarga
+          link.click();
+      });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var botonDescargarPDF = document.getElementById('descargarPDF');
+
+  botonDescargarPDF.addEventListener('click', function() {
+      var urlPDF = 'assets/archivos/2023.08.16 catálogo v3.pdf';
+      var link = document.createElement('a');
+      link.href = urlPDF;
+      link.download = '2023.08.16 catálogo v3.pdf';
+      link.click();
+  });
+});
 
 /**
  * navbar toggle
