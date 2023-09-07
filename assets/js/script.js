@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
           link.href = urlPDF;
 
           // Establece el atributo "download" para forzar la descarga
-          link.download = 'wraps.pdf'; // Puedes personalizar el nombre
+          link.download = 'documento.pdf'; // Puedes personalizar el nombre
 
           // Simula un clic en el enlace para iniciar la descarga
           link.click();
