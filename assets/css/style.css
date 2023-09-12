@@ -22,7 +22,7 @@
   --champagne-pink: hsl(15, 14%, 95%);
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
-  --deep-saffron: hsl(110, 41%, 47%);
+  --deep-saffron: hsl(130, 88%, 35%);
   --dark-orange: hsl(53, 87%, 45%);
   --desert-sand: hsl(23, 49%, 82%);
   --isabelline: hsl(38, 44%, 96%);
@@ -605,7 +605,7 @@ body.active {
 .hero-subtitle {
   color: var(--dark-orange);
   font-family: var(--ff-shadows-into-light);
-  font-size: 50px;
+  font-size: 55px;
   letter-spacing: 1px;
   margin-block-end: 25px;
 }
