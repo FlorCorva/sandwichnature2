@@ -1,29 +1,35 @@
-'use strict';
+"use strict";
+// Obtener el botón por su ID
+const saberMasButton = document.getElementById("saberMas");
 
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Obtén todos los botones con el atributo data-pdf
-  var botonesDescargarPDF = document.querySelectorAll('[data-pdf]');
-
-  // Agrega un evento de clic a cada botón
-  botonesDescargarPDF.forEach(function(boton) {
-      boton.addEventListener('click', function() {
-          // Obtiene la URL del PDF desde el atributo data-pdf
-          var urlPDF = boton.getAttribute('data-pdf');
-
-          // Crea un elemento <a> oculto para descargar el PDF
-          var link = document.createElement('a');
-          link.href = urlPDF;
-
-          // Establece el atributo "download" para forzar la descarga
-          link.download = 'documento.pdf'; // Puedes personalizar el nombre
-
-          // Simula un clic en el enlace para iniciar la descarga
-          link.click();
-      });
-  });
+// Agregar un evento de clic al botón
+saberMasButton.addEventListener("click", function () {
+  // Redirigir a la página web al hacer clic en el botón
+  window.location.href = "https://www.embutidosestevez.es/";
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtén todos los botones con el atributo data-pdf
+  var botonesDescargarPDF = document.querySelectorAll("[data-pdf]");
+
+  // Agrega un evento de clic a cada botón
+  botonesDescargarPDF.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      // Obtiene la URL del PDF desde el atributo data-pdf
+      var urlPDF = boton.getAttribute("data-pdf");
+
+      // Crea un elemento <a> oculto para descargar el PDF
+      var link = document.createElement("a");
+      link.href = urlPDF;
+
+      // Establece el atributo "download" para forzar la descarga
+      link.download = "documento.pdf"; // Puedes personalizar el nombre
+
+      // Simula un clic en el enlace para iniciar la descarga
+      link.click();
+    });
+  });
+});
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   var botonDescargarPDF = document.getElementById('descargarPDF');
@@ -57,8 +63,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-
-
 /**
  * header sticky & back to top
  */
@@ -75,8 +79,6 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
-
-
 
 /**
  * search box toggle
@@ -96,8 +98,6 @@ for (let i = 0; i < searchBoxElems.length; i++) {
   });
 }
 
-
-
 /**
  * move cycle on scroll
  */
@@ -108,7 +108,6 @@ let deliveryBoyMove = -80;
 let lastScrollPos = 0;
 
 window.addEventListener("scroll", function () {
-
   let deliveryBoyTopPos = deliveryBoy.getBoundingClientRect().top;
 
   if (deliveryBoyTopPos < 500 && deliveryBoyTopPos > -250) {
@@ -123,5 +122,4 @@ window.addEventListener("scroll", function () {
     lastScrollPos = activeScrollPos;
     deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
   }
-
 });
