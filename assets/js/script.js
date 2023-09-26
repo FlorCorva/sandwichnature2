@@ -1,4 +1,5 @@
 "use strict";
+
 // Obtener el botón por su ID
 const saberMasButton = document.getElementById("saberMas");
 
