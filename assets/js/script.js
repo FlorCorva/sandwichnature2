@@ -6,7 +6,7 @@ const saberMasButton = document.getElementById("saberMas");
 // Agregar un evento de clic al botón
 saberMasButton.addEventListener("click", function () {
   // Redirigir a la página web al hacer clic en el botón
-  window.location.href = "https://www.embutidosestevez.es/";
+  window.open("https://www.embutidosestevez.es/", "_blank");
 });
 
 document.addEventListener("DOMContentLoaded", function () {

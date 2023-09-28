@@ -1902,3 +1902,27 @@ textarea.input-field {
     grid-template-columns: 1.4fr 1fr 1fr 1.6fr;
   }
 }
+
+/* Estilos para el botón de WhatsApp flotante */
+.whatsapp-button {
+  position: fixed; /* Lo posiciona de forma fija en la ventana del navegador */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la derecha */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  background-color: #fafdfb; /* Color de fondo de WhatsApp */
+  padding: 10px; /* Espacio alrededor de la imagen */
+  border-radius: 50%; /* Da forma circular al botón */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: background-color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.whatsapp-button img {
+  width: 50px; /* Ancho de la imagen del icono de WhatsApp */
+  height: 50px; /* Altura de la imagen del icono de WhatsApp */
+  display: block;
+  margin: 0 auto;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse */
+}
