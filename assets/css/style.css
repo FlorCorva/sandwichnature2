@@ -1926,3 +1926,23 @@ textarea.input-field {
 .whatsapp-button:hover {
   background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse */
 }
+
+/* Estilo para ocultar las opciones del menú desplegable */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--dark-orange);
+  border: 1px solid #020202;
+}
+
+/* Estilo para mostrar las opciones del menú desplegable al hacer hover en el elemento de navegación */
+.nav-item:hover .submenu {
+  display: block;
+}
+
+/* Estilo para los elementos del menú desplegable */
+.submenu-item {
+  padding: 10px;
+  text-align: center;
+  color: floralwhite;
+}
