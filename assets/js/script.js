@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     heroSection.style.backgroundImage = `url('${imageUrl}')`;
   }
 
-  setInterval(changeBackgroundImage, 3000); // Cambiar cada 3 segundos (3000 milisegundos)
+  setInterval(changeBackgroundImage, 4000); // Cambiar cada 3 segundos (3000 milisegundos)
 });
 
 // Obtener el botón por su ID
