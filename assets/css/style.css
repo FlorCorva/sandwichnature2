@@ -1932,7 +1932,7 @@ textarea.input-field {
   display: none;
   position: absolute;
   background-color: var(--dark-orange);
-  border: 1px solid #020202;
+  transition: background-color 0.5s ease;
 }
 
 /* Estilo para mostrar las opciones del menú desplegable al hacer hover en el elemento de navegación */
@@ -1945,4 +1945,8 @@ textarea.input-field {
   padding: 10px;
   text-align: center;
   color: floralwhite;
+}
+
+.submenu-item:hover {
+  background-color: black /* Color deseado al pasar el mouse */;
 }
