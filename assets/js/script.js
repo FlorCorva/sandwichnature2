@@ -1,5 +1,23 @@
 "use strict";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const heroSection = document.querySelector(".hero");
+  const images = [
+    "./assets/images/hero-bg.jpg", // Agrega la ruta de tus imágenes aquí
+    "./assets/images/hero-bg2.jpg", // Agrega más rutas de imágenes si es necesario
+    "./assets/images/hero-bg3.jpg", // Agrega más rutas de imágenes si es necesario
+  ];
+  let currentImageIndex = 0;
+
+  function changeBackgroundImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    const imageUrl = images[currentImageIndex];
+    heroSection.style.backgroundImage = `url('${imageUrl}')`;
+  }
+
+  setInterval(changeBackgroundImage, 3000); // Cambiar cada 3 segundos (3000 milisegundos)
+});
+
 // Obtener el botón por su ID
 const saberMasButton = document.getElementById("saberMas");
 
