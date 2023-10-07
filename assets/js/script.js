@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeBackgroundImage, 4000); // Cambiar cada 3 segundos (3000 milisegundos)
 });
 
-// Obtener el botón por su ID
-const saberMasButton = document.getElementById("saberMas");
+// // Obtener el botón por su ID
+// const saberMasButton = document.getElementById("saberMas");
 
-// Agregar un evento de clic al botón
-saberMasButton.addEventListener("click", function () {
-  // Redirigir a la página web al hacer clic en el botón
-  window.open("https://www.embutidosestevez.es/", "_blank");
-});
+// // Agregar un evento de clic al botón
+// saberMasButton.addEventListener("click", function () {
+//   // Redirigir a la página web al hacer clic en el botón
+//   window.open("https://www.embutidosestevez.es/", "_blank");
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   // Obtén todos los botones con el atributo data-pdf
@@ -37,9 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // Obtiene la URL del PDF desde el atributo data-pdf
       var urlPDF = boton.getAttribute("data-pdf");
 
+      console.log("URL del PDF:", urlPDF); // Agrega esta línea de console.log
+
       // Crea un elemento <a> oculto para descargar el PDF
       var link = document.createElement("a");
       link.href = urlPDF;
+      link.target = "_blank"; // Abre en una nueva ventana o pestaña
 
       // Establece el atributo "download" para forzar la descarga
       link.download = "documento.pdf"; // Puedes personalizar el nombre
